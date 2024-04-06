@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Kumbh Sans";
+  font-size: 1.8rem;
+  min-height: 100vh;
+  height: 100%;
+  width: auto;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: hsl(185, 75%, 39%);
+}
+
+main {
+}
+
+.container {
+  width: 33rem;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+}
+
+.container::before {
+  content: "";
+  background-image: url("./images/bg-pattern-top.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  transform: translate(-78%, -65%);
+  z-index: -1;
+}
+
+.container::after {
+  content: "";
+  background-image: url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200%;
+  height: 200%;
+  transform: translate(75%, 73%);
+  z-index: -1;
+}
+
+.header {
+}
+
+.header-img {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+
+.info {
+  padding: 2.4rem 3.6rem 2.4rem 3.6rem;
+  border-bottom: 1px solid hsl(0, 0%, 59%);
+  position: relative;
+}
+
+.image,
+.person-img {
+  display: block;
+  width: 9.6rem;
+
+  border-radius: 50%;
+}
+
+.image {
+  position: absolute;
+  top: -35%;
+  right: 50%;
+  /* transform: translateX(-50%); */
+  transform: translate(50%, 0%);
+}
+
+.person-image {
+  border: 3px solid #fff;
+}
+.name {
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+  text-align: center;
+  padding-top: 3.2rem;
+}
+
+.name span {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+
+.location {
+  color: hsl(227, 10%, 46%);
+  text-align: center;
+}
+
+.stat-container {
+  padding: 2.4rem 3.6rem 2.4rem 3.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats-num {
+  font-weight: 700;
+  text-align: center;
+  font-size: 2.6rem;
+  color: hsl(229, 23%, 23%);
+  margin-bottom: 0.5rem;
+}
+
+.stats-info {
+  text-align: center;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+  font-size: 1.4rem;
+}
