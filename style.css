@@ -22,6 +22,11 @@ body {
   align-items: center;
 
   background-color: hsl(185, 75%, 39%);
+
+  background-image: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
 }
 
 main {
@@ -34,7 +39,7 @@ main {
   position: relative;
 }
 
-.container::before {
+/* .container::before {
   content: "";
   background-image: url("./images/bg-pattern-top.svg");
   background-repeat: no-repeat;
@@ -60,7 +65,7 @@ main {
   height: 200%;
   transform: translate(75%, 73%);
   z-index: -1;
-}
+} */
 
 .header {
 }
@@ -75,6 +80,7 @@ main {
   padding: 2.4rem 3.6rem 2.4rem 3.6rem;
   border-bottom: 1px solid hsl(0, 0%, 59%);
   position: relative;
+  padding-top: 4.6rem;
 }
 
 .image,
@@ -101,7 +107,7 @@ main {
   color: hsl(229, 23%, 23%);
   text-align: center;
   padding-top: 3.2rem;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
 }
 
 .name span {
@@ -123,7 +129,7 @@ main {
 .stats-num {
   font-weight: 700;
   text-align: center;
-  font-size: 2.6rem;
+  font-size: 2rem;
   color: hsl(229, 23%, 23%);
   margin-bottom: 0.5rem;
 }
